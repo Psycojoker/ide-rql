@@ -1,32 +1,36 @@
 {
-  "name": "ide-fortran",
-  "main": "./lib/main",
-  "version": "0.4.0",
-  "description": "Fortran language support for Atom-IDE.",
-  "keywords": [
-    "FORTRAN",
-    "autocomplete",
-    "ide"
-  ],
-  "repository": "https://github.com/hansec/ide-fortran",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.21.0"
+  "_from": "https://www.atom.io/api/packages/ide-rql/versions/0.4.0/tarball",
+  "_id": "ide-rql@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-uIPLvM3cOLxwONop/5HrwoN0ruAueDTzLf3xx4JS2IM0h/Lr2/LxGq9PMVOyXT06SH/44T9Eu2I2hvwu4/6NfA==",
+  "_location": "/ide-rql",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ide-rql/versions/0.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ide-rql/versions/0.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ide-rql/versions/0.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ide-rql/versions/0.4.0/tarball"
   },
-  "dependencies": {
-    "atom-languageclient": "^0.9.0"
-  },
-  "enhancedScopes": [
-    "source.fortran.free",
-    "source.fortran.fixed"
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
+  "_resolved": "https://www.atom.io/api/packages/ide-rql/versions/0.4.0/tarball",
+  "_shasum": "1ee1a8cadc954441b81d710ff2bfbce381db11b4",
+  "_spec": "https://www.atom.io/api/packages/ide-rql/versions/0.4.0/tarball",
+  "_where": "/tmp/apm-install-dir-119107-9150-1h11m52.xfsm",
+  "bugs": {
+    "url": "https://github.com/hansec/ide-rql/issues"
+  },
+  "bundleDependencies": false,
   "configSchema": {
-    "fortlsPath": {
+    "rqllsPath": {
       "title": "Fortran Language Server Path",
       "order": 1,
       "type": "string",
-      "default": "fortls",
-      "description": "Absolute path to ```fortls``` executable."
+      "default": "/home/psychojoker/.local/bin/rqlls",
+      "description": "Absolute path to ```rqlls``` executable."
     },
     "include_symbol_mem": {
       "type": "boolean",
@@ -88,8 +92,8 @@
       "type": "boolean",
       "default": true,
       "order": 10,
-      "title": "Display warnings when fortls is outdated",
-      "description": "Provides notification when the underlying ```fortran-language-server``` is out of date"
+      "title": "Display warnings when rqlls is outdated",
+      "description": "Provides notification when the underlying ```rql-language-server``` is out of date"
     }
   },
   "consumedServices": {
@@ -109,6 +113,27 @@
       }
     }
   },
+  "dependencies": {
+    "atom-languageclient": "^0.9.0"
+  },
+  "deprecated": false,
+  "description": "Fortran language support for Atom-IDE.",
+  "engines": {
+    "atom": ">=1.21.0"
+  },
+  "enhancedScopes": [
+    "source.rql.free",
+    "source.rql.fixed"
+  ],
+  "homepage": "https://github.com/hansec/ide-rql#readme",
+  "keywords": [
+    "FORTRAN",
+    "autocomplete",
+    "ide"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "ide-rql",
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
@@ -140,5 +165,10 @@
         "0.1.0": "provideOutlines"
       }
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hansec/ide-rql.git"
+  },
+  "version": "0.4.0"
 }
